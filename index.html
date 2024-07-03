@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- cdn style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body>
-    
-</body>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="">
+    <header class=" lg:px-20 ">
+      <div class="flex justify-between item-center">
+        <div>
+          <h3 class="poppins text-black text-xl lg:text-4xl font-bold">Bike Dekho</h3>
+        </div>
+        <div>
+          <ul>
+            <li class=" mt-2 flex gap-6 items-center text-black text-thin text-xl poppins">
+              <a href="">Home</a>
+              <a href="">Shop</a>
+              <a href="">News</a>
+              <a href="">Contact</a>
+              <button class="text-white text-xl bg-[rgb(231,111,81)] py-2 px-8 rounded poppins">Login</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- this is the banner section and its called carosel section -->
+       <div class=" lg:grid grid-cols-2  bg-[rgba(231,111,81,0.1)] mt-8 rounded-lg">
+        <div>
+            <div class="carousel w-full">
+                <div id="item1" class="carousel-item w-full">
+                  <img class="width-3/10" src="images/slider/bike1.png" alt="">
+                   
+                </div>
+                <div id="item2" class="carousel-item w-full">
+                  <img src="images/slider/bike2.png" alt="">
+                </div>
+                <div id="item3" class="carousel-item w-full">
+                  <img src="images/slider/bike3.png" alt="">
+                </div>
+                <div id="item4" class="carousel-item w-full">
+                 <img src="images/slider/bike4.png" alt="">
+                </div>
+              </div>
+              <div class="flex justify-center items-center w-full">
+                <a href="#item1" class="btn btn-xs">1</a>
+                <a href="#item2" class="btn btn-xs">2</a>
+                <a href="#item3" class="btn btn-xs">3</a>
+                <a href="#item4" class="btn btn-xs">4</a>
+              </div>
+        </div>
+          <div class="mt-20">
+            <h3 class="text-black font-extrabold text-6xl poppins">Ride-On R15 V4 <br>With Smile</h3>
+            <p class="text-[rgba(0,0,0,0.8)] text-x poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt voluptates ipsa modi deleniti non optio architecto voluptas nostrum nobis?</p>
+            <button class="text-white text-xl bg-[rgb(231,111,81)] py-2 px-8 rounded mt-2">Purchase</button>
+          </div>
+       </div>
+    </header>
+    <main class="px-20">
+      <!-- this is the featured bikes in this year section -->
+      <section>
+        <div class="flex justify-center items-center mt-20">
+          <h2 class="poppins text-6xl text-[rgb(0,0,0)]  lg:px-8">Featured Bikes In This Year</h2>
+        </div>
+        <div class="grid  lg:grid-cols-3 gap-6 py-2 mt-12">
+          <div><img src="images/others/feature-bike.png" alt=""></div>
+          <div><img src="images/others/feature-bike.png" alt=""></div>
+          <div><img src="images/others/feature-bike.png" alt=""></div>
+        </div>
+      </section>
+      <!-- latest news part this one -->
+       <section>
+        <div class="text-center mt-5">
+          <h2 class="text-4xl text-[rgb(10,8,38)] poppins">Latest News</h2>
+        </div>
+        <!-- first card section this one -->
+         <div class="grid lg:grid-cols-3 gap-3 mt-9">
+          
+        <div class="card card-compact bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="images/others/latest1.png" alt="">
+          </figure>
+          <div class="card-body">
+            <h2 class="text-[rgb(24,25,31)] text-3xl poppins">Ducati XDaviel s-73</h2>
+            <p class="text-[rgb(108,108,108)] text-x poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellat consectetur sit culpa, expedita officia nulla natus necessitatibus sequi non?</p>
+            <div class="card-actions justify-start">
+              <button class="bg-[rgb(231,111,81)] px-4 py-2 rounded text-white">Read more</button>
+            </div>
+          </div>
+        </div>
+        <!-- secend card section start from here -->
+        <div class="card card-compact bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="images/others/latest2.png" alt="">
+          </figure>
+          <div class="card-body">
+            <h2 class="text-[rgb(24,25,31)] text-3xl poppins">Motorcycle scotter</h2>
+            <p class="text-[rgb(108,108,108)] text-x poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellat consectetur sit culpa, expedita officia nulla natus necessitatibus sequi non?</p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-outline btn-secondary">Read more</button>
+            </div>
+          </div>
+        </div>
+        <!-- third card section start from here -->
+        <div class="card card-compact bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="images/others/latest3.png" alt="">
+          </figure>
+          <div class="card-body">
+            <h2 class="text-[rgb(24,25,31)] text-3xl poppins">2024 Honda Cbr</h2>
+            <p class="text-[rgb(108,108,108)] text-x poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem repellat consectetur sit culpa, expedita officia nulla natus necessitatibus sequi non?</p>
+            <div class="card-actions justify-start">
+              <button class="btn btn-outline btn-secondary">Read more</button>
+            </div>
+          </div>
+        </div>
+         </div>
+       </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
